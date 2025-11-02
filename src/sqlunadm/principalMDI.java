@@ -37,6 +37,7 @@ public class principalMDI extends javax.swing.JFrame {
         salir = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+// nada aun 
 
         ventana.setBackground(new java.awt.Color(255, 153, 153));
         ventana.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
