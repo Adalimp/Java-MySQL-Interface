@@ -16,7 +16,7 @@ public class conexionBD
           try
           {
               Class.forName("com.mysql.jdbc.Driver");
-              Connection conexion2 = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/RegistrosKinderRosita","root","1234"); 
+              Connection conexion2 = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3307/RegistrosKinderRosita","root","1234"); 
                             Statement q= conexion2.createStatement();
                   ResultSet rst =q.executeQuery("SELECT *FROM alumnos;");
          
@@ -47,7 +47,7 @@ public class conexionBD
         {
             Class.forName("com.mysql.jdbc.Driver");
             
-            conexionrd= DriverManager.getConnection("jdbc:mysql://127.0.0.1/RegistrosKinderRosita","root","1234");
+            conexionrd= DriverManager.getConnection("jdbc:mysql://127.0.0.1:3307/RegistrosKinderRosita","root","1234");
          
          Statement ssr= conexionrd.createStatement();
          ssr.executeUpdate("INSERT INTO  `registroskinderrosita`.`alumnos` (`idalumnos` ,`nombre`,`edad`,`papa`,`mama`,`telefono`,`grado`,`grupo`)VALUES ('"+idalumno+"','"+nombre+"','"+edad+"','"+papa+"', '"+mama+"','"+telefono+"', '"+grado+"','"+grupo+"');");
