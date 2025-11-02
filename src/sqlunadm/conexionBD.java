@@ -16,7 +16,7 @@ public class conexionBD
           try
           {
               Class.forName("com.mysql.jdbc.Driver");
-              Connection conexion2 = DriverManager.getConnection("jdbc:mysql://127.0.0.1/RegistrosKinderRosita","root","1234"); 
+              Connection conexion2 = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/RegistrosKinderRosita","root","1234"); 
                             Statement q= conexion2.createStatement();
                   ResultSet rst =q.executeQuery("SELECT *FROM alumnos;");
          
