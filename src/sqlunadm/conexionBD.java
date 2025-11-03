@@ -23,6 +23,7 @@ public class conexionBD
        
                      while (rst.next())
               {
+               System.out.println("muestra algo");
             System.out.println(rst.getInt(1)+rst.getString(2)+rst.getInt(3)+rst.getString(4)+rst.getString(5)+rst.getInt(6)+rst.getString(7)+rst.getString(8));
              }
        
